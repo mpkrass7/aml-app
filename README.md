@@ -2,7 +2,7 @@ This application can show the benefit DataRobot can provide a manual reviewer 'd
 
 The anomaly score can compliment the classification model and potentially catch different fraudulant observations. Can make for a good story if fraudulant actors 'adapt their behavior.' 
 
-[Link to the Application](https://share.streamlit.io/iveksl2/streamlit_apps/aml_app/aml_app.py)
+[Link to the Application](https://share.streamlit.io/mpkrass7/aml-app/aml_app.py)
 
 Score the sample file provided in the Repository. This application is largely based off of an application *Marshall Krassenstein* built. 
 
