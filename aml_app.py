@@ -27,7 +27,6 @@ def get_raw_data(dataset_id: str) -> pd.DataFrame:
         pd.DataFrame: Original dataset.
     """
     # TODO: FIX THIS FUNCTION.
-    # It's reading full data basically as a workaround for https://datarobot.atlassian.net/browse/DSX-2141
     # Everything we do will be in sample, and this is hard to generalize to new projects
     # https://github.com/dansbecker/datarobot_churn_app/blob/main/understanding_churn_section.py
     dataset = dr.Dataset.get(dataset_id)
