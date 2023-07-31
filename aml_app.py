@@ -15,7 +15,7 @@ from project_metadata import (
 )
 
 
-@st.cache(allow_output_mutation=True)
+@st.cache_data
 def get_raw_data(dataset_id: str) -> pd.DataFrame:
     """Retrieves raw data from the AI Catalog that initiaties a project.
     https://datarobot-public-api-client.readthedocs-hosted.com/en/v2.20.0/entities/dataset.html#retrieving-datasets
@@ -34,7 +34,7 @@ def get_raw_data(dataset_id: str) -> pd.DataFrame:
     return pd.read_csv("tmp.csv").copy()
 
 
-@st.cache
+@st.cache_data
 def get_datarobot_predictions(
     deployment_id: str, pred_data: pd.DataFrame
 ) -> List[float]:
@@ -71,7 +71,7 @@ def get_datarobot_predictions(
     return predictions
 
 
-@st.cache
+@st.cache_data
 def get_datarobot_prediction_explanations(
     deployment_id: str, pred_data: pd.DataFrame
 ) -> pd.DataFrame:
